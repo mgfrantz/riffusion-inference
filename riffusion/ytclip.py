@@ -60,6 +60,7 @@ def prepare_clip(path, start_seconds, num_beats, start_adj_ms, end_adj_ms, state
     state["seconds"] = (
         (beats[num_beats] + end_adj_ms) - (beats[0] + start_adj_ms)
     ) / 1000.0
+    state['duration_ms'] = (beats[num_beats] + end_adj_ms) - (beats[0] + start_adj_ms)
     return CLIP_FILENAME, clip.frame_rate, state
 
 
