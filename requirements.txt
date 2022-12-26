@@ -4,9 +4,12 @@ dacite
 diffusers
 flask
 flask_cors
+gradio>=3.15.0
+librosa==0.9.2 
 numpy
 pillow
-pydub
+pydub==0.25.1
+pytube==12.1.2 
 scipy
 torch
 torchaudio
