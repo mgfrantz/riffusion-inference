@@ -64,4 +64,4 @@ def prepare_clip(path, start_seconds, num_beats, start_adj_ms, end_adj_ms, state
 
 
 def get_clip_img():
-    return Image.open(spectro_from_wav(CLIP_FILENAME))
+    return Image.open(spectro_from_wav(CLIP_FILENAME)).convert("RGB")
