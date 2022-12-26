@@ -10,5 +10,5 @@ setup(name='riffusion',
       author_email='gward@python.net',
       url='https://www.python.org/sigs/distutils-sig/',
       packages=['riffusion'],
-      requires=packages
+      install_requires=packages
      )
